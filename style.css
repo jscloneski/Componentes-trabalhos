@@ -1,0 +1,24 @@
+:root {
+    --ff-heading: 'Epilogue', sans-serif;
+    --ff-texting: 'Open sans', sans-serif;
+    
+    --bg-primary: #28293E;
+    --fc-primary: #FFFFFF;
+    --fc-secondary: #BBB3E6;
+}
+
+body {
+    font-family: var(--ff-heading);
+
+    background-color: var(--bg-primary);
+    color: var(--fc-primary);
+}
+
+header {
+    font-family: var(--ff-heading);
+}
+
+header p {
+    color: var(--fc-secondary);
+    text-transform: uppercase;
+}
