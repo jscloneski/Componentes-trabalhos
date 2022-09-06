@@ -1,5 +1,5 @@
 
-# Desafio - Fase03 Explorer - Reponsividade.
+# Fase03 Explorer - Reponsividade.
 
 
 ## Aprendizados
