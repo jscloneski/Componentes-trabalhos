@@ -15,7 +15,8 @@
 
     font-size: 62.5% ;
     --fs-body: 1.6rem;
-    --fs-heading: 4rem;
+    --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
 }
 
 body {
@@ -26,9 +27,49 @@ body {
 }
 
 .page {
-    max-width: 33rem;
+    max-width: clamp(33rem, 30rem + 60vw, 117rem);
+    padding: 0 5rem;
     margin: 0 auto;
 }
+
+@media (min-width: 700px) {
+    /*
+    main {
+        grid-template-columns: 1fr 1fr;
+    }*/
+
+    .page {
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+}
+
+
+@media (min-width: 930px) {
+    
+    main {
+        grid-template-areas: "A B B" "C C D";
+    }
+
+    main div:nth-child(1) {
+        grid-area: A;
+    }
+
+    main div:nth-child(2) {
+        grid-area: B;
+    }
+
+    main div:nth-child(3) {
+        grid-area: C;
+    }
+
+    main div:nth-child(4) {
+        grid-area: D;
+    }
+
+}
+
+
 
 img {
     width: 100%;
@@ -40,6 +81,8 @@ header {
     font-family: var(--ff-heading);
 
     text-align: center;
+    animation-name: topdown;
+    animation-duration: 700ms;
 }
 
 header p {
@@ -61,8 +104,11 @@ header h1 {
 }
 
 main {
+    margin-top: 4.0rem;
     display: grid;
     gap: 3.2rem;
+
+    animation: downtop 700ms 350ms backwards;
 }
 
 .card {
@@ -74,11 +120,13 @@ main {
     object-fit: cover;
     border-radius: 6px;
     transition: all 500ms;
+    filter: brightness(0.5);
 }
 
 .card img:hover {
     transform: scale(1.1);
     opacity: 0.7;
+    filter: blur(2px);
 }
 
 .card h2 {
@@ -86,7 +134,7 @@ main {
     bottom: 5.2rem;
     left: 2.8rem;
 
-    font-size: var(--fs-heading);
+    font-size: var(--fs-heading-sm);
     font-weight: 800;
 
     display: flex;
@@ -108,16 +156,6 @@ main {
     font-family: var(--ff-heading);
 
     width: fit-content;
-}
-
-header {
-    animation-name: topdown;
-    animation-duration: 700ms;
-}
-
-main {
-    animation: downtop 700ms 350ms backwards;
-    
 }
 
 @keyframes topdown {
