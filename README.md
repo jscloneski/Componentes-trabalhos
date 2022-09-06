@@ -4,7 +4,7 @@
 
 ## Aprendizados
 
-Durante a prática deste projeto, pude aprender como a responsividade entre dispositivos mobile e desktop funcionam. Outro tema abordado foi a criação de animações e aplicações de filtros e do elemento grid no CSS. <br>
+Durante a prática deste projeto, pude aprender como a responsividade entre dispositivos mobile e desktop funcionam. Outro tema abordado foi a criação de animações e aplicações de filtros e do elemento grid no CSS. <br> <br>
 Para utilizar a responsividade, apliquei o conhecido Mobile First. Desta forma, criei primeiro a página para versão Mobile e depois fiz as alterações necessárias para a adaptação em Desktop.
 
 ## Stack utilizada
