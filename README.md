@@ -15,5 +15,7 @@ Durante a prática deste projeto, pude aprender como a responsividade entre disp
 
  <a href="https://componentetrabalhosstage03.netlify.app/" target="_blank">Componente trabalhos</a>
 
+## Imagem de referência
 
+<img src="https://github.com/jscloneski/Componentes-trabalhos/blob/main/2022-08-25%2021_15_59-Window.png">
 
