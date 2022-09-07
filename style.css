@@ -29,7 +29,7 @@ body {
 .page {
     max-width: clamp(33rem, 30rem + 60vw, 117rem);
     padding: 0 5rem;
-    margin: 2.0rem auto;
+    margin: 0 auto;
 }
 
 @media (min-width: 700px) {
